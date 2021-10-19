@@ -1,6 +1,5 @@
 package tictactoe;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -109,7 +108,7 @@ public class Main {
                 row = Integer.parseInt(v1);
                 String v2 = scanner.next();
                 column = Integer.parseInt(v2);
-            } catch (InputMismatchException e) {
+            } catch (Exception e) {
                 System.out.println("You should enter numbers!");
                 scanner.nextLine();
                 continue;
